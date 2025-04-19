@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "title": "Learn the basics of Node.js",
+    "completed": false
+  },
+  {
+    "id": 2,
+    "title": "Learn how to build an API",
+    "completed": true
+  },
+  {
+    "id": 3,
+    "title": "Build an API",
+    "completed": false
+  },
+  {
+    "id": 4,
+    "title": "Build a RESTful API",
+    "completed": true
+  },
+  {
+    "id": 5,
+    "title": "Deploy your API",
+    "completed": true
+  }
+]
