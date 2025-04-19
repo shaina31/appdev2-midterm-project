@@ -92,7 +92,6 @@ const server = http.createServer(async (req, res) => {
         todos.push(newTodo);
         await writeTodos(todos);
 
-        // Log the successful operation
         logger.emit('log', `POST Created: ${JSON.stringify(newTodo)}`);
 
         res.writeHead(201, { 'Content-Type': 'application/json' });
@@ -113,7 +112,6 @@ const server = http.createServer(async (req, res) => {
         todos[index] = { ...todos[index], ...data, id };
         await writeTodos(todos);
 
-        // Log the update
         logger.emit('log', `PUT Updated: ${JSON.stringify(todos[index])}`);
 
         res.writeHead(200, { 'Content-Type': 'application/json' });
