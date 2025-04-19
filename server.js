@@ -133,7 +133,6 @@ const server = http.createServer(async (req, res) => {
         const deletedTodo = todos.splice(index, 1)[0];
         await writeTodos(todos);
 
-        // Log the deletion
         logger.emit('log', `DELETE Removed: ${JSON.stringify(deletedTodo)}`);
 
         res.writeHead(200);
